@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="zadanie2.css" />
+    <title>Document</title>
+  </head>
+  <!--rem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia rutrum pretium. Ut consectetur consectetur varius. Nam sagittis nunc lacus, in aliquam ex -->
+  <body>
+    <div class="header">
+      <ul>
+        <li>
+          <a href="#"><h2>item1</h2></a>
+        </li>
+        <li>
+          <a href="#"><h2>item2</h2></a>
+        </li>
+        <li>
+          <a href="#"><h2>item3</h2></a>
+        </li>
+        <li>
+          <a href="#"><h2>item4</h2></a>
+        </li>
+      </ul>
+    </div>
+    <div class="unique_people">
+      <div class="parent2">
+        <div class="div111">
+          <div class="div111_main_text">
+            <h1>uniquepeople.sk</h1>
+          </div>
+          <div class="div111_sub_texts">
+            <p>
+              rem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+              Cras lacinia rutrum pretium.rem ipsum dolor sit amet, consectetur
+              adipiscing elit.<br />
+              Cras lacinia rutrum pretium.
+            </p>
+          </div>
+          <div class="div111_input">
+            <input type="button" value="Read More -->" />
+          </div>
+        </div>
+        <div class="div222">
+          <img src="laptop.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="services">
+      <img src="logo.png" alt="" />
+      <h1>SERVICES</h1>
+          <h2>
+            rem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia
+            rutrum pretium.
+          </h2>
+      
+    </div>
+    <div class="servipces_bottom">
+      <div class="slider">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
+
+          <div class="slide first">
+            <img src="img1.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img2.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img3.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img4.png" alt="" />
+          </div>
+          <!-- automation -->
+          <div class="navigation-auto">
+            <div class="auto-btn-1"></div>
+            <div class="auto-btn-2"></div>
+            <div class="auto-btn-3"></div>
+            <div class="auto-btn-4"></div>
+          </div>
+        </div>
+        <div class="navigation-manual2">
+          <label for="radio1" class="manual-btn2"></label>
+          <label for="radio2" class="manual-btn2"></label>
+          <label for="radio3" class="manual-btn2"></label>
+          <label for="radio4" class="manual-btn2"></label>
+        </div>
+      </div>
+      <script>
+        var counter = 1;
+        setInterval(function () {
+          document.getElementById("radio" + counter).checked = true;
+          counter++;
+
+          if (counter > 4) {
+            counter = 1;
+          }
+        }, 5000);
+      </script>
+    </div>
+    <div class="middle_green">
+      <div class="parent">
+        <div class="div1">
+          <div class="main_text">
+            <h1>Lets get started</h1>
+            <p>
+              rem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+              Cras lacinia rutrum pretium.
+            </p>
+          </div>
+          <div class="sub_texts">
+            <h2>1.Best Performance</h2>
+            <p>
+              rem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+              Cras lacinia rutrum pretium.
+            </p>
+            <h2>2.Easy Settings</h2>
+            <p>
+              rem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+              Cras lacinia rutrum pretium.
+            </p>
+            <h2>3.Secure Multi Usable</h2>
+            <p>
+              rem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+              Cras lacinia rutrum pretium.
+            </p>
+          </div>
+        </div>
+        <div class="div2">
+          <img src="laptop.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="middle">
+      <div class="slider_header_text">
+        <h1>
+          Check testimonials for <br />
+          our satisfied clients
+        </h1>
+      </div>
+      <div class="slider">
+        <div class="slides">
+          </div>
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
+
+          <div class="slide first">
+            <img src="img1.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img2.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img3.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img4.png" alt="" />
+          </div>
+          <!-- automation -->
+          <div class="navigation-auto">
+            <div class="auto-btn-1"></div>
+            <div class="auto-btn-2"></div>
+            <div class="auto-btn-3"></div>
+            <div class="auto-btn-4"></div>
+          </div>
+        </div>
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+      </div>
+      <script>
+        var counter = 1;
+        setInterval(function () {
+          document.getElementById("radio" + counter).checked = true;
+          counter++;
+
+          if (counter > 4) {
+            counter = 1;
+          }
+        }, 5000);
+      </script>
+    </div>
+    <div class="contact">
+      <h1>Contact Us</h1>
+      <div class="contact_inputs">
+        <div class="parent_contact">
+          <div class="div11"></div>
+          <div class="div22">
+            <div class="bruh">
+              <form action="/action_page.php">
+                <select id="country" name="country">
+                  <option value="australia">Error</option>
+                  <option value="canada">Work</option>
+                  <option value="usa">No Bitches</option>
+                </select>
+                <input type="text" id="fname" name="firstname" placeholder="Email">
+            
+                
+                <input type="text1" class='lname'id="lname" name="lastname" placeholder="Write Your Message Here..">
+            
+                
+                
+              
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+            
+            </div>
+          </div>
+          <div class="div33"></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer_info">
+        <div class="info">
+          <div class="div11111"><div class="info_box"><h3>Logo.co</h3><p>rem ipsum dolor sit amet, consectetur adipiscing elit.
+            Cras lacinia rutrum pretium.</p></div> </div>
+          <div class="div22222"><div class="info_box"><h3>Services</h3><p>rem ipsum dolor sit amet, consectetur adipiscing elit.
+            Cras lacinia rutrum pretium</p></div> </div>
+          <div class="div33333"> <div class="info_box"><h3>Links</h3><p></p>rem ipsum dolor sit amet, consectetur adipiscing </div></div>
+          <div class="div44444"><div class="info_box"><h3>Get in Touch</h3><p>text</p></div> </div>
+          </div> 
+      <div class="copyright"><p>copyrighttextcopyrighttext</p></div>
+    </div>
+  </div>
+  </body>
+</html>

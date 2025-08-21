@@ -1,0 +1,235 @@
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; utf-8" >
+	<meta name="viewport" content="width=device-width">
+	<title>Zadanie</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body style="background-color:white;"> 
+	<div class="navbar" >
+		<img src="logo.png" class="logo">
+		<ul>
+			<li><a href="#"><h2>item1</h2></a></li>
+			<li><a href="#"><h2>item2</h2></a></li>
+			<li><a href="#"><h2>item3</h2></a></li>
+			<li><a href="#"><h2>item4</h2></a></li>
+			<li><a href="#"><h2>item5</h2></a></li>
+			<li><a href="#"><h2>item6</h2></a></li>
+			<li><a href="#"><h2>item7</h2></a></li>
+			
+		</ul>
+	</div>
+	 <!-- Slideshow container -->
+	 <div class="call-buttons">
+		<input type="button" name="call-btn" class="call-btn" id="call" value="Call to Action">
+		<input type="button" name="read-btn" class="read-btn" id="read" value="Read More">
+	</div>
+	<div class="slider">
+		<div class="slides">
+			<div class="text">
+				<h1>
+					Lorem Ipsum is simply dummy text of <br>
+					Lorem Ipsum has 
+				</h1>
+			</div>
+			<input type="radio" name="radio-btn" id="radio1">
+			<input type="radio" name="radio-btn" id="radio2">
+			<input type="radio" name="radio-btn" id="radio3">
+			<input type="radio" name="radio-btn" id="radio4">
+
+			<div class="slide first">
+				<img src="img1.png" alt="">
+			</div>
+			<div class="slide ">
+				<img src="img2.png" alt="">
+			</div>
+			<div class="slide ">
+				<img src="img3.png" alt="">
+			</div>
+			<div class="slide ">
+				<img src="img4.png" alt="">
+			</div>
+			<!-- automation -->
+				<div class="navigation-auto">
+					<div class="auto-btn-1"></div>
+					<div class="auto-btn-2"></div>
+					<div class="auto-btn-3"></div>
+					<div class="auto-btn-4"></div>
+				</div>
+			</div>
+				<div class="navigation-manual">
+					<label for="radio1" class="manual-btn"></label>
+					<label for="radio2" class="manual-btn"></label>
+					<label for="radio3" class="manual-btn"></label>
+					<label for="radio4" class="manual-btn"></label>
+				</div>
+			
+		</div>
+	<script>
+		var counter = 1;
+		setInterval(function(){
+			document.getElementById('radio'+counter).checked = true;
+			counter++;
+
+			if(counter>4){
+				counter = 1;
+			}
+		},5000)
+
+	</script>
+	<div class="text-header">
+		<div class="watermark"><h1>PROMISEO</h1></div>
+			<div class="header"> <h1>Lorem ipsum dolor sit amet</h1></div>	
+	<div class="text-discription">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed imperdiet mauris, eget dapibus neque. 
+		   Curabitur purus turpis, interdum eget tempor sed, faucibus ac lacus. Fusce eleifend massa lectus, at porttitor orci congue ac. 
+		   Morbi eleifend metus eu nisl volutpat, ac tincidunt mauris posuere. Mauris ipsum massa, viverra pharetra mauris ut, 
+		   feugiat vehicula quam. Aliquam ex libero, tincidunt porta pharetra et, venenatis laoreet neque. Vivamus eget laoreet nisi. 
+		   Phasellus sed augue interdum, lacinia ante sit amet, commodo odio.Integer lorem sapien, viverra vel laoreet quis, sagittis eu tortor.
+		   Cras ut tristique elit, sed dapibus velit. Aenean posuere, dui eget auctor tristique, est est dapibus elit, id consectetur arcu sem ac urna. Proin eu imperdiet enim. Ut consectetur neque lorem, 
+		   vitae maximus arcu tempor id. Mauris maximus sem sed condimentum volutpat. Praesent non aliquet elit, vel vestibulum mauris. Donec convallis faucibus fermentum. Aenean nec cursus magna. Nulla sagittis elit accumsan porta tristique. 
+		   Nunc dapibus orci eget varius interdum.
+		   Nam lobortis id leo eu finibus. Sed ultrices, nunc et sollicitudin gravida, 
+		   dolor velit vulputate diam, in dapibus tellus odio in mauris.  </p>
+	</div>
+	<div class="dynamic-text-header">
+		<h1 class="dynamic-header">tempus in nibh?</h1>
+	</div>
+	<div class="dynamyc-buttons">
+		<input onclick="myFunction1()" href="1" type="submit" value="1" class="dynamyc-btn">
+		<input onclick="myFunction2()" href="2" type="submit" value="2" class="dynamyc-btn">
+		<input onclick="myFunction3()" href="3" type="submit" value="3" class="dynamyc-btn">
+		<input onclick="myFunction4()" href="4" type="submit" value="4" class="dynamyc-btn">
+		<input onclick="myFunction5()" href="5" type="submit" value="5" class="dynamyc-btn">
+		<input onclick="myFunction6()" href="6" type="submit" value="6" class="dynamyc-btn">
+		<input onclick="myFunction7()" href="7" type="submit" value="7" class="dynamyc-btn">
+	</div>
+	<!--smalus brainus solucionus-->  
+	<p class="dynamic-responce"   id="responce">Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered</p>
+	<script>	
+		function myFunction1(){
+			document.getElementById("responce").innerHTML = "you decidet to press one ";
+		}	
+		function myFunction2(){
+			document.getElementById("responce").innerHTML = "you decidet to press two";
+		}
+		function myFunction3(){
+			document.getElementById("responce").innerHTML = "you decidet to press three";
+		}
+		function myFunction4(){
+			document.getElementById("responce").innerHTML = "you decidet to press four";
+		}
+		function myFunction5(){
+			document.getElementById("responce").innerHTML = "you decidet to press five";
+		}
+		function myFunction6(){
+			document.getElementById("responce").innerHTML = "you decidet to press six";
+		}
+		function myFunction7(){
+			document.getElementById("responce").innerHTML = "you decidet to press seven";
+		}
+	</script>	
+	<div class="read-more">
+	
+		<div class="information">
+			<div class="information-text">
+				<div class="info-text">
+					<div class="parent1">
+						<div class="div1"><h2 class="information-header">Aliquam lucus</h2> </div>
+						<div class="div2"><img class="info-img" src="group.png" alt=""> </div>
+						<div class="div3"> <p class="info-header">Etiam eu eros sed</p><p href="#" class="info-href">Etiam eu eros sed </p></div>
+						<div class="div4"> <img class="info-img" src="individual.png" alt=""></div>
+						<div class="div5"> <p class="info-header">Etiam eu eros sed</p><p href="#" class="info-href">Etiam eu eros sed</p></div>
+						<div class="div6"><img class="info-img" src="calendar.png" alt=""> </div>
+						<div class="div7"> <p class="info-header">Etiam eu eros sed</p><p href="#" class="info-href">Etiam eu eros sed</p></div>
+						
+					</div> 	
+				</div>
+			</div>
+			<div class="people-talking">
+				<div class="people-talking-text">
+					<div class="div11"><p>Maecenas ultricies fogo  <br> elementum<b> Pellentesque.</b> </p> </div>
+					</div> 
+			</div>
+		</div>		
+		<section id="blog">
+				<div class="blog-heading">
+					<h3>Blog</h3>
+				</div>
+				<div class="block-container">
+					<div class="parent2">
+						<div class="div8"> <div class="blog-box">
+							<div class="blog-img"><img src="blog-1.jpg" alt="Blog">
+						</div>
+						<div class="blog-text">
+							<img class="blog-img-plus-darker" src="plus-darker.png" alt="">
+							<img class="blog-img-plus" src="plus.png" alt="" onclick="fullscreen()">
+							<p href="#" class="blog-title">rem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia rutrum pretium. Ut consectetur consectetur varius. Nam sagittis nunc lacus, in aliquam ex</p>
+							<span>18 July 2021 / web desighn</span>
+						</div>
+						</div>
+					</div>
+						<div class="div9"> 	<div class="blog-box">
+							<div class="blog-img"><img src="blog-2.jpeg" alt="Blog">
+						</div>
+						<div class="blog-text">
+							<img class="blog-img-plus-darker" src="plus-darker.png" alt="">
+							<img class="blog-img-plus" src="plus.png" alt="" onclick="fullscreen()">
+							<p href="#" class="blog-title">rem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia rutrum pretium. Ut consectetur consectetur varius. Nam sagittis nunc lacus, in aliquam ex</p>
+							<span>18 July 2021 / web desighn</span>
+						</div>
+						</div></div>
+						<div class="div10"> <div class="blog-box">
+							<div class="blog-img"><img src="blog-3.jpg" alt="Blog">
+						</div>
+						<div class="blog-text">
+							<img class="blog-img-plus-darker" src="plus-darker.png" alt="">
+							<img class="blog-img-plus" src="plus.png" alt="" onclick="fullscreen()">
+							<p href="#" class="blog-title">rem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia rutrum pretium. Ut consectetur consectetur varius. Nam sagittis nunc lacus, in aliquam ex</p>
+							<span>18 July 2021 / web desighn</span>
+						</div>
+						</div></div>
+						</div> 
+						
+						<script>
+							function fullscreen(){
+							print()	
+							}
+						</script>
+				</div>
+		</section>
+	</div>
+	<div class="contact-footer-background">
+	</div>
+	<div class="contact-footer">
+		<div class="parent5">
+			<div class="div10000"> <img src="logo.png" alt="" class="footer-logo"></div>
+			<div class="div20000"> 
+				<ul>
+				<li><a href="#"><h2>item1</h2></a></li>
+				<li><a href="#"><h2>item2</h2></a></li>
+				<li><a href="#"><h2>item3</h2></a></li>
+				<li><a href="#"><h2>item4</h2></a></li>
+				<li><a href="#"><h2>item5</h2></a></li>
+				<li><img src="facebook.png" alt="" onclick="fullscreen()"></li>
+				<li><img src="tumblr.png" alt="" onclick="fullscreen()"></li>
+				</ul></div>
+			</div> 
+	</div>
+	<div class="footer">
+		<div class="parent3">
+			<div class="div100"> 
+				<p class="copyright">COPYRIGHT TEXT</p>
+			</div>
+			<div class="div200"> 
+				<div class="parent4">
+					<div class="div1000"> <img src="phone.png" alt="" class="footer-img"> <p class="footer-info">+421 901 234 567</p></div>
+					<div class="div2000"> <img src="mail.png" alt="" class="footer-img"> <p class="footer-info">hi@emailhallo.sk</p></div>
+					<div class="div3000"> <img src="internet.png" alt="" class="footer-img"> <p class="footer-info">randomseo.com</p></div>
+				</div> 
+			</div>
+		</div> 
+	</div>
+</body>	
+</html>
+	
